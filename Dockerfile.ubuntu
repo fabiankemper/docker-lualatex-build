@@ -1,0 +1,12 @@
+FROM ubuntu:bionic
+MAINTAINER Fabian Kemper <fkemper90@gmail.com>
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && apt-get install -yq \
+  texlive-full \
+  biber \
+  make git \
+  && rm -rf /var/lib/apt/list/*
+  
+WORKDIR /data
+VOLUME ["/data"]
