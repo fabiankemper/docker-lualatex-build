@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 MAINTAINER Fabian Kemper <fkemper90@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
